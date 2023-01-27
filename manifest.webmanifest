@@ -1,0 +1,32 @@
+{
+    "theme_color": "#DEF7EB",
+    "background_color": "#DBCFDD",
+    "display": "browser",
+    "scope": "/",
+    "start_url": "/https://tvmaze123.glitch.me",
+    "name": "TV Shows at TV Maze",
+    "short_name": "TV Shows Finder",
+    "description": "An app that uses the TV Maze API to find TV shows searched by the user",
+    "icons": [
+        {
+            "src": "/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

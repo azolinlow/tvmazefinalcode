@@ -1,0 +1,169 @@
+/*
+FONTS:
+font-family: 'Comfortaa', cursive;
+font-family: 'Fredoka One', cursive;
+
+COLORS:
+https://coolors.co/b4edd2-a0cfd3-b3b7d1-171118
+*/
+.showtitle{
+  font-size: 20pt;
+  color:#2D5D62;
+}
+
+body{
+  font-family: 'Comfortaa';
+  justify-content: center;  
+  background-color: #DEF7EB;
+}
+
+#pagetitle{
+  font-family: 'Fredoka One';
+  font-size: 23pt;
+  color: #204246;
+}
+
+#lightbox {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.9); 
+  display:none;
+}
+
+#message {
+  width:80%;
+  padding:20px;
+  background-color:#DEF7EB;
+  text-align:center;
+    
+  /* Center the message in the lightbox */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#search{
+  font-size: 12pt;
+  width: 200px;
+  border-radius: 5px;
+  padding: 5px;
+  color: #171118;
+}
+#button{
+  width: 200px;
+  height: 25px;
+  font-family: 'Comfortaa';
+  border-radius: 5px;
+  font-size: 12pt;
+  color: #171118;
+}
+
+.tvshowbox{
+  font-size: 14pt;
+  margin:10px;
+}
+
+.mainimg{
+  border: 5px solid #4D5380;
+}
+
+#main{
+  width: 400px;
+}
+
+#episodebutton a{
+  text-decoration: none;
+  color: #171118;
+}
+
+#episodebutton{
+  margin-bottom: 10px;
+  font-family: 'Comfortaa';
+  border-radius: 6px;
+  border: 1px solid #000000;
+  font-size: 14pt;
+  background-color: #f2e5f5;
+}
+.episodeList{
+  height: 300px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 600px){
+  body{
+    display: grid;
+    background-color: #DBCFDD;
+  }
+  .genrelist{
+    font-size: 18pt;
+  }
+  .episodeList{
+    grid-column: span 2;
+    height: 400px;
+    width: 600px;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  #episodebutton:hover{
+    transition-duration: 0.3s;
+    background-color: #A0CFD3;
+    font-weight: bold;
+  }
+  #episodebutton{
+    margin-bottom: 5px;
+    border-radius: 6px;
+    border: 1px solid #000000;
+    font-size: 13pt;
+    background-color: #FFFFFF;
+  }
+  #main{
+    width: 600px;
+  }
+  .tvshowbox{
+    font-size: 16pt;
+    margin:10px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #search{
+    font-size: 17pt;
+    width: 300px;
+    border-radius: 10px;
+    padding: 5px;
+    color: #171118;
+  }
+  #button{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 13pt;
+    color: #171118;
+  }
+  #button:hover{
+    transition-duration: 0.3s;
+    background-color: #A0CFD3;
+    cursor: pointer;
+  }
+  #pagetitle{
+    font-family: 'Fredoka One';
+    font-size: 35pt;
+    color: #204246;
+  }  
+  .showsummary{
+    grid-column: span 2;
+    font-size: 18pt;
+  }
+  .showtitle{
+    font-size: 23pt;
+    grid-column: span 2;
+  }
+  #message{
+    background-color: #DBCFDD;
+  }
+}
